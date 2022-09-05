@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340FF9A927D9AF24006F378A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340FF9A827D9AF24006F378A /* NetworkExtension.framework */; };
+		34A10ADB27E42AB900B944D2 /* WebServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A10ADA27E42AB900B944D2 /* WebServerManager.m */; };
+		34DCD35827D5A75C008AA7C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD35727D5A75C008AA7C6 /* AppDelegate.m */; };
+		34DCD35B27D5A75C008AA7C6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD35A27D5A75C008AA7C6 /* SceneDelegate.m */; };
+		34DCD35E27D5A75C008AA7C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD35D27D5A75C008AA7C6 /* ViewController.m */; };
+		34DCD36127D5A75C008AA7C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DCD35F27D5A75C008AA7C6 /* Main.storyboard */; };
+		34DCD36327D5A760008AA7C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DCD36227D5A760008AA7C6 /* Assets.xcassets */; };
+		34DCD36627D5A760008AA7C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DCD36427D5A760008AA7C6 /* LaunchScreen.storyboard */; };
+		34DCD36927D5A760008AA7C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD36827D5A760008AA7C6 /* main.m */; };
+		34DCD37127D5A85F008AA7C6 /* CustomURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD37027D5A85F008AA7C6 /* CustomURLProtocol.m */; };
+		34DCD37427D5B8CF008AA7C6 /* CustomURLSchemeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD37327D5B8CF008AA7C6 /* CustomURLSchemeHandler.m */; };
+		34DCD37727D5BA91008AA7C6 /* CustomWkWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD37627D5BA91008AA7C6 /* CustomWkWebView.m */; };
+		34F22F7127D9F439006AE945 /* VpnConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F22F7027D9F439006AE945 /* VpnConfigModel.m */; };
+		34F22F7427D9F764006AE945 /* VPNProtocolSetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F22F7327D9F764006AE945 /* VPNProtocolSetUtil.m */; };
+		34F22F7A27DA0927006AE945 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340FF9A827D9AF24006F378A /* NetworkExtension.framework */; };
+		34F22F7E27DA0927006AE945 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F22F7D27DA0927006AE945 /* PacketTunnelProvider.m */; };
+		34F22F8327DA0927006AE945 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34F22F7927DA0927006AE945 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34F22F8927DAF7D8006AE945 /* VpnCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F22F8827DAF7D8006AE945 /* VpnCenter.m */; };
+		34F22F9E27DF264C006AE945 /* HostUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F22F9D27DF264C006AE945 /* HostUtil.m */; };
+		46296C72652A1E9D7DD6280C /* Pods_NetworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9FA75C0D2FEF289467412 /* Pods_NetworkDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34F22F8127DA0927006AE945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DCD34B27D5A75C008AA7C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34F22F7827DA0927006AE945;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		340FF9BC27D9CBEE006F378A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				34F22F8327DA0927006AE945 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		340FF9A627D9AF23006F378A /* NetworkDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkDemo.entitlements; sourceTree = "<group>"; };
+		340FF9A827D9AF24006F378A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		340FF9B127D9CBEE006F378A /* AppProxyProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppProxyProvider.h; sourceTree = "<group>"; };
+		340FF9B227D9CBEE006F378A /* AppProxyProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppProxyProvider.m; sourceTree = "<group>"; };
+		340FF9B427D9CBEE006F378A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340FF9B527D9CBEE006F378A /* AppProxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppProxy.entitlements; sourceTree = "<group>"; };
+		34A10AD927E42AB800B944D2 /* WebServerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebServerManager.h; sourceTree = "<group>"; };
+		34A10ADA27E42AB900B944D2 /* WebServerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebServerManager.m; sourceTree = "<group>"; };
+		34DCD35327D5A75C008AA7C6 /* NetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DCD35627D5A75C008AA7C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34DCD35727D5A75C008AA7C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34DCD35927D5A75C008AA7C6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		34DCD35A27D5A75C008AA7C6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		34DCD35C27D5A75C008AA7C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		34DCD35D27D5A75C008AA7C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34DCD36027D5A75C008AA7C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34DCD36227D5A760008AA7C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34DCD36527D5A760008AA7C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34DCD36727D5A760008AA7C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DCD36827D5A760008AA7C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34DCD36F27D5A85E008AA7C6 /* CustomURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomURLProtocol.h; sourceTree = "<group>"; };
+		34DCD37027D5A85F008AA7C6 /* CustomURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomURLProtocol.m; sourceTree = "<group>"; };
+		34DCD37227D5B8CF008AA7C6 /* CustomURLSchemeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomURLSchemeHandler.h; sourceTree = "<group>"; };
+		34DCD37327D5B8CF008AA7C6 /* CustomURLSchemeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomURLSchemeHandler.m; sourceTree = "<group>"; };
+		34DCD37527D5BA91008AA7C6 /* CustomWkWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomWkWebView.h; sourceTree = "<group>"; };
+		34DCD37627D5BA91008AA7C6 /* CustomWkWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomWkWebView.m; sourceTree = "<group>"; };
+		34F22F6F27D9F439006AE945 /* VpnConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VpnCon\U0005figModel.h"; sourceTree = "<group>"; };
+		34F22F7027D9F439006AE945 /* VpnConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VpnCon\U0005figModel.m"; sourceTree = "<group>"; };
+		34F22F7227D9F764006AE945 /* VPNProtocolSetUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPNProtocolSetUtil.h; sourceTree = "<group>"; };
+		34F22F7327D9F764006AE945 /* VPNProtocolSetUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPNProtocolSetUtil.m; sourceTree = "<group>"; };
+		34F22F7927DA0927006AE945 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		34F22F7C27DA0927006AE945 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		34F22F7D27DA0927006AE945 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		34F22F7F27DA0927006AE945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F22F8027DA0927006AE945 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		34F22F8727DAF7D8006AE945 /* VpnCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VpnCenter.h; sourceTree = "<group>"; };
+		34F22F8827DAF7D8006AE945 /* VpnCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VpnCenter.m; sourceTree = "<group>"; };
+		34F22F9127DEF61D006AE945 /* DNSProxyProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSProxyProvider.h; sourceTree = "<group>"; };
+		34F22F9227DEF61D006AE945 /* DNSProxyProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSProxyProvider.m; sourceTree = "<group>"; };
+		34F22F9427DEF61D006AE945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F22F9527DEF61D006AE945 /* DNSProxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNSProxy.entitlements; sourceTree = "<group>"; };
+		34F22F9C27DF264C006AE945 /* HostUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostUtil.h; sourceTree = "<group>"; };
+		34F22F9D27DF264C006AE945 /* HostUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostUtil.m; sourceTree = "<group>"; };
+		5F1BEE6960D5A781431838A4 /* Pods-NetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDemo.release.xcconfig"; path = "Target Support Files/Pods-NetworkDemo/Pods-NetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		83C9FA75C0D2FEF289467412 /* Pods_NetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB47AABB5497ECCE8A008445 /* Pods-NetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDemo.debug.xcconfig"; path = "Target Support Files/Pods-NetworkDemo/Pods-NetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34DCD35027D5A75C008AA7C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340FF9A927D9AF24006F378A /* NetworkExtension.framework in Frameworks */,
+				46296C72652A1E9D7DD6280C /* Pods_NetworkDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F22F7627DA0927006AE945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F22F7A27DA0927006AE945 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		340FF9A727D9AF24006F378A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				340FF9A827D9AF24006F378A /* NetworkExtension.framework */,
+				83C9FA75C0D2FEF289467412 /* Pods_NetworkDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		340FF9B027D9CBEE006F378A /* AppProxy */ = {
+			isa = PBXGroup;
+			children = (
+				340FF9B127D9CBEE006F378A /* AppProxyProvider.h */,
+				340FF9B227D9CBEE006F378A /* AppProxyProvider.m */,
+				340FF9B427D9CBEE006F378A /* Info.plist */,
+				340FF9B527D9CBEE006F378A /* AppProxy.entitlements */,
+			);
+			path = AppProxy;
+			sourceTree = "<group>";
+		};
+		34A10AD827E42A9400B944D2 /* WebServer */ = {
+			isa = PBXGroup;
+			children = (
+				34A10AD927E42AB800B944D2 /* WebServerManager.h */,
+				34A10ADA27E42AB900B944D2 /* WebServerManager.m */,
+			);
+			path = WebServer;
+			sourceTree = "<group>";
+		};
+		34DCD34A27D5A75C008AA7C6 = {
+			isa = PBXGroup;
+			children = (
+				34DCD35527D5A75C008AA7C6 /* NetworkDemo */,
+				340FF9B027D9CBEE006F378A /* AppProxy */,
+				34F22F7B27DA0927006AE945 /* PacketTunnel */,
+				34F22F9027DEF61D006AE945 /* DNSProxy */,
+				34DCD35427D5A75C008AA7C6 /* Products */,
+				340FF9A727D9AF24006F378A /* Frameworks */,
+				DEB0D30667B47259803F340F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		34DCD35427D5A75C008AA7C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34DCD35327D5A75C008AA7C6 /* NetworkDemo.app */,
+				34F22F7927DA0927006AE945 /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34DCD35527D5A75C008AA7C6 /* NetworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				340FF9A627D9AF23006F378A /* NetworkDemo.entitlements */,
+				34DCD35627D5A75C008AA7C6 /* AppDelegate.h */,
+				34DCD35727D5A75C008AA7C6 /* AppDelegate.m */,
+				34DCD35927D5A75C008AA7C6 /* SceneDelegate.h */,
+				34DCD35A27D5A75C008AA7C6 /* SceneDelegate.m */,
+				34DCD35C27D5A75C008AA7C6 /* ViewController.h */,
+				34DCD35D27D5A75C008AA7C6 /* ViewController.m */,
+				34A10AD827E42A9400B944D2 /* WebServer */,
+				34F22F6E27D9F416006AE945 /* Vpn */,
+				34DCD36F27D5A85E008AA7C6 /* CustomURLProtocol.h */,
+				34DCD37027D5A85F008AA7C6 /* CustomURLProtocol.m */,
+				34DCD37227D5B8CF008AA7C6 /* CustomURLSchemeHandler.h */,
+				34DCD37327D5B8CF008AA7C6 /* CustomURLSchemeHandler.m */,
+				34DCD37527D5BA91008AA7C6 /* CustomWkWebView.h */,
+				34DCD37627D5BA91008AA7C6 /* CustomWkWebView.m */,
+				34DCD35F27D5A75C008AA7C6 /* Main.storyboard */,
+				34DCD36227D5A760008AA7C6 /* Assets.xcassets */,
+				34DCD36427D5A760008AA7C6 /* LaunchScreen.storyboard */,
+				34DCD36727D5A760008AA7C6 /* Info.plist */,
+				34DCD36827D5A760008AA7C6 /* main.m */,
+			);
+			path = NetworkDemo;
+			sourceTree = "<group>";
+		};
+		34F22F6E27D9F416006AE945 /* Vpn */ = {
+			isa = PBXGroup;
+			children = (
+				34F22F6F27D9F439006AE945 /* VpnConfigModel.h */,
+				34F22F7027D9F439006AE945 /* VpnConfigModel.m */,
+				34F22F7227D9F764006AE945 /* VPNProtocolSetUtil.h */,
+				34F22F7327D9F764006AE945 /* VPNProtocolSetUtil.m */,
+				34F22F8727DAF7D8006AE945 /* VpnCenter.h */,
+				34F22F8827DAF7D8006AE945 /* VpnCenter.m */,
+			);
+			path = Vpn;
+			sourceTree = "<group>";
+		};
+		34F22F7B27DA0927006AE945 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				34F22F7C27DA0927006AE945 /* PacketTunnelProvider.h */,
+				34F22F7D27DA0927006AE945 /* PacketTunnelProvider.m */,
+				34F22F7F27DA0927006AE945 /* Info.plist */,
+				34F22F8027DA0927006AE945 /* PacketTunnel.entitlements */,
+				34F22F9C27DF264C006AE945 /* HostUtil.h */,
+				34F22F9D27DF264C006AE945 /* HostUtil.m */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		34F22F9027DEF61D006AE945 /* DNSProxy */ = {
+			isa = PBXGroup;
+			children = (
+				34F22F9127DEF61D006AE945 /* DNSProxyProvider.h */,
+				34F22F9227DEF61D006AE945 /* DNSProxyProvider.m */,
+				34F22F9427DEF61D006AE945 /* Info.plist */,
+				34F22F9527DEF61D006AE945 /* DNSProxy.entitlements */,
+			);
+			path = DNSProxy;
+			sourceTree = "<group>";
+		};
+		DEB0D30667B47259803F340F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB47AABB5497ECCE8A008445 /* Pods-NetworkDemo.debug.xcconfig */,
+				5F1BEE6960D5A781431838A4 /* Pods-NetworkDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34DCD35227D5A75C008AA7C6 /* NetworkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DCD36C27D5A760008AA7C6 /* Build configuration list for PBXNativeTarget "NetworkDemo" */;
+			buildPhases = (
+				BDFAD61405450322C68440C1 /* [CP] Check Pods Manifest.lock */,
+				34DCD34F27D5A75C008AA7C6 /* Sources */,
+				34DCD35027D5A75C008AA7C6 /* Frameworks */,
+				34DCD35127D5A75C008AA7C6 /* Resources */,
+				340FF9BC27D9CBEE006F378A /* Embed App Extensions */,
+				035EA16DC263189C91DFC95C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34F22F8227DA0927006AE945 /* PBXTargetDependency */,
+			);
+			name = NetworkDemo;
+			productName = NetworkDemo;
+			productReference = 34DCD35327D5A75C008AA7C6 /* NetworkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34F22F7827DA0927006AE945 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F22F8427DA0927006AE945 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				34F22F7527DA0927006AE945 /* Sources */,
+				34F22F7627DA0927006AE945 /* Frameworks */,
+				34F22F7727DA0927006AE945 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = 34F22F7927DA0927006AE945 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34DCD34B27D5A75C008AA7C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					34DCD35227D5A75C008AA7C6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					34F22F7827DA0927006AE945 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 34DCD34E27D5A75C008AA7C6 /* Build configuration list for PBXProject "NetworkDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34DCD34A27D5A75C008AA7C6;
+			productRefGroup = 34DCD35427D5A75C008AA7C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34DCD35227D5A75C008AA7C6 /* NetworkDemo */,
+				34F22F7827DA0927006AE945 /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34DCD35127D5A75C008AA7C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DCD36627D5A760008AA7C6 /* LaunchScreen.storyboard in Resources */,
+				34DCD36327D5A760008AA7C6 /* Assets.xcassets in Resources */,
+				34DCD36127D5A75C008AA7C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F22F7727DA0927006AE945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		035EA16DC263189C91DFC95C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkDemo/Pods-NetworkDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkDemo/Pods-NetworkDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkDemo/Pods-NetworkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDFAD61405450322C68440C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34DCD34F27D5A75C008AA7C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F22F7127D9F439006AE945 /* VpnConfigModel.m in Sources */,
+				34DCD37127D5A85F008AA7C6 /* CustomURLProtocol.m in Sources */,
+				34DCD35E27D5A75C008AA7C6 /* ViewController.m in Sources */,
+				34DCD37727D5BA91008AA7C6 /* CustomWkWebView.m in Sources */,
+				34A10ADB27E42AB900B944D2 /* WebServerManager.m in Sources */,
+				34F22F7427D9F764006AE945 /* VPNProtocolSetUtil.m in Sources */,
+				34F22F8927DAF7D8006AE945 /* VpnCenter.m in Sources */,
+				34DCD37427D5B8CF008AA7C6 /* CustomURLSchemeHandler.m in Sources */,
+				34DCD35827D5A75C008AA7C6 /* AppDelegate.m in Sources */,
+				34DCD36927D5A760008AA7C6 /* main.m in Sources */,
+				34DCD35B27D5A75C008AA7C6 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F22F7527DA0927006AE945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F22F7E27DA0927006AE945 /* PacketTunnelProvider.m in Sources */,
+				34F22F9E27DF264C006AE945 /* HostUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34F22F8227DA0927006AE945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34F22F7827DA0927006AE945 /* PacketTunnel */;
+			targetProxy = 34F22F8127DA0927006AE945 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34DCD35F27D5A75C008AA7C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34DCD36027D5A75C008AA7C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34DCD36427D5A760008AA7C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34DCD36527D5A760008AA7C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34DCD36A27D5A760008AA7C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34DCD36B27D5A760008AA7C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34DCD36D27D5A760008AA7C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB47AABB5497ECCE8A008445 /* Pods-NetworkDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NetworkDemo/NetworkDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7734JU45YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtsdlt.test.NetworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34DCD36E27D5A760008AA7C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1BEE6960D5A781431838A4 /* Pods-NetworkDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NetworkDemo/NetworkDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7734JU45YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtsdlt.test.NetworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34F22F8527DA0927006AE945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7734JU45YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtsdlt.test.NetworkDemo.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34F22F8627DA0927006AE945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7734JU45YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtsdlt.test.NetworkDemo.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34DCD34E27D5A75C008AA7C6 /* Build configuration list for PBXProject "NetworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DCD36A27D5A760008AA7C6 /* Debug */,
+				34DCD36B27D5A760008AA7C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DCD36C27D5A760008AA7C6 /* Build configuration list for PBXNativeTarget "NetworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DCD36D27D5A760008AA7C6 /* Debug */,
+				34DCD36E27D5A760008AA7C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F22F8427DA0927006AE945 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F22F8527DA0927006AE945 /* Debug */,
+				34F22F8627DA0927006AE945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34DCD34B27D5A75C008AA7C6 /* Project object */;
+}
